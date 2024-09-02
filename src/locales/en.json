@@ -37,6 +37,11 @@
     "subject-placeholder": "Subject",
     "password-placeholder": "Password",
     "confirmpassword-placeholder": "Confirm Password",
-    "action-button": "Ok"
+    "action-button": "Ok",
+    "validation": {
+      "field-required": "Field required",
+      "invalid-email": "Invalid Email",
+      "password-not-match": "Passwords don't match"
+    }
   }
 }

@@ -11,10 +11,23 @@ import { initialState, Options } from "./data";
 import { Button } from "../../components/button";
 import { Paper } from "../../components/paper";
 import { useTranslation } from "react-i18next";
+import { formValidation } from "./sign-up.validation";
 
 export const SignUp = () => {
-  const [form, setForm] = useState(initialState);
   const { t } = useTranslation();
+  const [form, setForm] = useState(initialState);
+
+  const onSubmitForm = () => {
+    const { form: newForm, isValid } = formValidation(form, t);
+    setForm(newForm);
+    console.log({isValid});
+    if(isValid) {
+      // register user
+    } else {
+
+    }
+  };
+
   return (
     <Paper>
       <Container>
@@ -169,7 +182,9 @@ export const SignUp = () => {
           />
         </div>
         <div className="actions">
-          <Button>{t("sign-up.action-button")}</Button>
+          <Button onClick={() => onSubmitForm()}>
+            {t("sign-up.action-button")}
+          </Button>
         </div>
       </Container>
     </Paper>

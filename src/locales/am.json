@@ -37,6 +37,11 @@
     "subject-placeholder": "Թեմա",
     "password-placeholder": "Գաղտնաբառ",
     "confirmpassword-placeholder": "Հաստատեք գաղտնաբառը",
-    "action-button": "Ok"
+    "action-button": "Ok",
+    "validation": {
+      "field-required": "Դաշտը պարտադիր է",
+      "invalid-email": "Անվավեր էլփոստ",
+      "password-not-match": "Գաղտնաբառերը չեն համընկնում"
+    }
   }
 }

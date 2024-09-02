@@ -30,11 +30,11 @@ export const initialState = {
     value: "",
     error: "",
   },
-  grade: {
+  subject: {
     value: [],
     error: "",
   },
-  subject: {
+  grade: {
     value: [],
     error: "",
   },

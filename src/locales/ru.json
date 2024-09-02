@@ -37,6 +37,11 @@
     "subject-placeholder": "Предмет",
     "password-placeholder": "Пароль",
     "confirmpassword-placeholder": "Подтвердите пароль",
-    "action-button": "Ок"
+    "action-button": "Ок",
+    "validation": {
+      "field-required": "Обязательное поле",
+      "invalid-email": "Неверный адрес электронной почты",
+      "password-not-match": "Пароли не совпадают"
+    }
   }
 }
