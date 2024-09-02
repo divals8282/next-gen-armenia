@@ -1,0 +1,16 @@
+:root {
+    --primary: #34C88A;
+}
+
+body {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}

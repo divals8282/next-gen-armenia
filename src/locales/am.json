@@ -1,0 +1,39 @@
+{
+  "header": {
+    "navigation": {
+      "teacher": "Դասատու",
+      "donors": "Դոնորներ",
+      "about-us": "Մեր մասին",
+      "contact-us": "Կապ մեզ հետ",
+      "blog": "Բլոգ"
+    },
+    "sign-in-button": "Լոգին"
+  },
+  "sign-in": {
+    "title": "Մութք",
+    "welcome": "Բարի գալուստ!",
+    "input-email-placeholder": "է․ փոստ",
+    "input-password-placeholder": "Ծացկագիր",
+    "forgot-password": "Մոռացել եմ ծացկագիրը",
+    "sign-in-button": "Մութք",
+    "register-as": "Գրանցվել որպես",
+    "teacher-button": "Դասատու",
+    "donor-button": "Դոնոր"
+  },
+  "sign-up": {
+    "title": "Գրանցվել",
+    "descr": "Շատ հեշտ!",
+    "name-placeholder": "Անուն",
+    "lastname-placeholder": "Ազգանուն",
+    "email-placeholder": "է․ փոստ",
+    "phonenumber-placeholder": "Հեռ․",
+    "region-placeholder": "Տարածաշրջան",
+    "city-placeholder": "Քաղաք",
+    "school-placeholder": "Դպրոց",
+    "grade-placeholder": "Դասարան",
+    "subject-placeholder": "Թեմա",
+    "password-placeholder": "Գաղտնաբառ",
+    "confirmpassword-placeholder": "Հաստատեք գաղտնաբառը",
+    "action-button": "Ok"
+  }
+}

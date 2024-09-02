@@ -1,0 +1,39 @@
+{
+  "header": {
+    "navigation": {
+      "teacher": "Учители",
+      "donors": "Доноры",
+      "about-us": "О нас",
+      "contact-us": "Связаться с нами",
+      "blog": "Блог"
+    },
+    "sign-in-button": "Логин"
+  },
+  "sign-in": {
+    "title": "Вход",
+    "welcome": "Добро пожаловать!",
+    "input-email-placeholder": "Мейл",
+    "input-password-placeholder": "Пароль",
+    "forgot-password": "забыл пароль",
+    "sign-in-button": "Вход",
+    "register-as": "Регистрация как",
+    "teacher-button": "Учител",
+    "donor-button": "Донор"
+  },
+  "sign-up": {
+    "title": "Регистрация",
+    "descr": "Это просто.",
+    "name-placeholder": "Имя",
+    "lastname-placeholder": "Фамилия",
+    "email-placeholder": "Емайл",
+    "phonenumber-placeholder": "Номер Телефона",
+    "region-placeholder": "Регион",
+    "city-placeholder": "Город",
+    "school-placeholder": "Школа",
+    "grade-placeholder": "Оценка",
+    "subject-placeholder": "Предмет",
+    "password-placeholder": "Пароль",
+    "confirmpassword-placeholder": "Подтвердите пароль",
+    "action-button": "Ок"
+  }
+}

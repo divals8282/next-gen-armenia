@@ -1,0 +1,39 @@
+{
+  "header": {
+    "navigation": {
+      "teacher": "Teacher",
+      "donors": "Donors",
+      "about-us": "About us",
+      "contact-us": "Contact us",
+      "blog": "blog"
+    },
+    "sign-in-button": "Sign In"
+  },
+  "sign-in": {
+    "title": "Sign In",
+    "welcome": "Welcome Back!",
+    "input-email-placeholder": "Email",
+    "input-password-placeholder": "Password",
+    "forgot-password": "Forgot Password",
+    "sign-in-button": "Sign In",
+    "register-as": "Register as a",
+    "teacher-button": "Teacher",
+    "donor-button": "Donor"
+  },
+  "sign-up": {
+    "title": "Sign Up",
+    "descr": "It’s quick and easy.",
+    "name-placeholder": "Name",
+    "lastname-placeholder": "Last Name",
+    "email-placeholder": "Email",
+    "phonenumber-placeholder": "Phone Number",
+    "region-placeholder": "Region",
+    "city-placeholder": "City",
+    "school-placeholder": "School",
+    "grade-placeholder": "Grade",
+    "subject-placeholder": "Subject",
+    "password-placeholder": "Password",
+    "confirmpassword-placeholder": "Confirm Password",
+    "action-button": "Ok"
+  }
+}
