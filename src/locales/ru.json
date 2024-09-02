@@ -1,4 +1,7 @@
 {
+  "components": {
+    "placeholder-search": "Поиск"
+  },
   "header": {
     "navigation": {
       "teacher": "Учители",

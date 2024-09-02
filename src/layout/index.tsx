@@ -10,12 +10,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
 export const Layout: ComponentT = ({ children }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const lang = localStorage.getItem('lang')
+  const [selectedLanguage, setSelectedLanguage] = useState(lang ? lang : 'en');
   const { t, i18n } = useTranslation();
   useEffect(() => {
+    localStorage.setItem('lang', selectedLanguage);
     i18n.changeLanguage(selectedLanguage);
   }, [selectedLanguage, i18n])
-
   return (
     <Container>
       <header>

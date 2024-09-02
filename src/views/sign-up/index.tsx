@@ -19,8 +19,8 @@ export const SignUp = () => {
     <Paper>
       <Container>
         <div className="head">
-          <p className="title">{t('sign-up.title')}</p>
-          <p className="descr">{t('sign-up.descr')}</p>
+          <p className="title">{t("sign-up.title")}</p>
+          <p className="descr">{t("sign-up.descr")}</p>
           <div className="divider"></div>
         </div>
         <div className="block-divided">
@@ -33,12 +33,12 @@ export const SignUp = () => {
                 name: { ...form.name, value: e.target.value },
               })
             }
-            placeholder={t('sign-up.name-placeholder')}
+            placeholder={t("sign-up.name-placeholder")}
           />
           <Input
             value={form.lastName.value}
             error={form.lastName.error}
-            placeholder={t('sign-up.lastname-placeholder')}
+            placeholder={t("sign-up.lastname-placeholder")}
             onChange={(e) =>
               setForm({
                 ...form,
@@ -58,7 +58,7 @@ export const SignUp = () => {
             }
             type="email"
             error={form.email.error}
-            placeholder={t('sign-up.email-placeholder')}
+            placeholder={t("sign-up.email-placeholder")}
           />
         </div>
         <div className="block">
@@ -78,7 +78,7 @@ export const SignUp = () => {
                 },
               })
             }
-            placeholder={t('sign-up.phonenumber-placeholder')}
+            placeholder={t("sign-up.phonenumber-placeholder")}
           />
         </div>
         <div className="block">
@@ -95,7 +95,7 @@ export const SignUp = () => {
               })
             }
             error={form.region.error}
-            placeholder={t('sign-up.region-placeholder')}
+            placeholder={t("sign-up.region-placeholder")}
           />
         </div>
         <div className="block">
@@ -106,7 +106,7 @@ export const SignUp = () => {
             }
             value={form.city.value}
             error={form.city.error}
-            placeholder={t('sign-up.city-placeholder')}
+            placeholder={t("sign-up.city-placeholder")}
           />
         </div>
         <div className="block">
@@ -117,7 +117,18 @@ export const SignUp = () => {
               setForm({ ...form, school: { ...form.school, value } })
             }
             error={form.school.error}
-            placeholder={t('sign-up.school-placeholder')}
+            placeholder={t("sign-up.school-placeholder")}
+          />
+        </div>
+        <div className="block">
+          <MultiSelectSearch
+            options={Options}
+            placeholder={t("sign-up.subject-placeholder")}
+            error={form.subject.error}
+            value={form.subject.value}
+            onChange={(values) =>
+              setForm({ ...form, subject: { ...form.subject, value: values } })
+            }
           />
         </div>
         <div className="block">
@@ -128,18 +139,7 @@ export const SignUp = () => {
             }
             error={form.grade.error}
             options={Options}
-            placeholder={t('sign-up.grade-placeholder')}
-          />
-        </div>
-        <div className="block">
-          <MultiSelectSearch
-            options={Options}
-            placeholder={t('sign-up.subject-placeholder')}
-            error={form.subject.error}
-            value={form.subject.value}
-            onChange={(values) =>
-              setForm({ ...form, subject: { ...form.subject, value: values } })
-            }
+            placeholder={t("sign-up.grade-placeholder")}
           />
         </div>
         <div className="block">
@@ -152,7 +152,7 @@ export const SignUp = () => {
               })
             }
             error={form.password.error}
-            placeholder={t('sign-up.password-placeholder')}
+            placeholder={t("sign-up.password-placeholder")}
           />
         </div>
         <div className="block">
@@ -165,11 +165,11 @@ export const SignUp = () => {
                 rePassword: { ...form.rePassword, value: e.target.value },
               })
             }
-            placeholder={t('sign-up.confirmpassword-placeholder')}
+            placeholder={t("sign-up.confirmpassword-placeholder")}
           />
         </div>
         <div className="actions">
-          <Button>{t('sign-up.action-button')}</Button>
+          <Button>{t("sign-up.action-button")}</Button>
         </div>
       </Container>
     </Paper>

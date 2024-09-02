@@ -34,7 +34,7 @@ export const SignIn = () => {
         </div>
         <div className="block-divided">
           <Link to={"/sign-up"}><Button color="secondary">{t('sign-in.teacher-button')}</Button></Link>
-          <Link to={"/sign-up"}><Button color="secondary">{t('sign-in.donor-button')}</Button></Link>
+          <Link to={"/sign-in"}><Button color="secondary">{t('sign-in.donor-button')}</Button></Link>
         </div>
       </Container>
     </Paper>

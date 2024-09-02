@@ -1,4 +1,7 @@
 {
+  "components": {
+    "placeholder-search": "Search"
+  },
   "header": {
     "navigation": {
       "teacher": "Teacher",

@@ -1,4 +1,7 @@
 {
+  "components": {
+    "placeholder-search": "Որոնում"
+  },
   "header": {
     "navigation": {
       "teacher": "Դասատու",

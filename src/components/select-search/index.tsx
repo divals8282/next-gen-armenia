@@ -4,12 +4,15 @@ import { useRef, useState } from "react";
 import { useOutsideClick } from "../../hooks/useOutsideClick";
 import { ReactComponent as ChevronSVG } from "../../assets/chevron.svg";
 import { ReactComponent as SearchSVG } from "../../assets/search.svg";
+import { useTranslation } from "react-i18next";
 
 export const SelectSearch: ComponentT = ({ error, value, onChange, options, placeholder }) => {
+  const { t } = useTranslation();
+  
   const [openList, setOpenList] = useState(false);
   const [search, setSerach] = useState("");
   const containerRef = useRef(null);
-
+  
   useOutsideClick(containerRef, () => {
     setOpenList(false);
   });
@@ -36,7 +39,7 @@ export const SelectSearch: ComponentT = ({ error, value, onChange, options, plac
             value={search}
             onChange={({ target }) => setSerach(target.value)}
             type="text"
-            placeholder="Search"
+            placeholder={t("components.placeholder-search")}
           />
         </div>
         <ul className={`list ${openList ? "open" : "closed"}`}>
