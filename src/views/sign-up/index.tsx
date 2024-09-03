@@ -20,7 +20,6 @@ export const SignUp = () => {
   const onSubmitForm = () => {
     const { form: newForm, isValid } = formValidation(form, t);
     setForm(newForm);
-    console.log({isValid});
     if(isValid) {
       // register user
     } else {
