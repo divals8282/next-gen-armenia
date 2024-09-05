@@ -20,10 +20,9 @@ export const SignUp = () => {
   const onSubmitForm = () => {
     const { form: newForm, isValid } = formValidation(form, t);
     setForm(newForm);
-    if(isValid) {
+    if (isValid) {
       // register user
     } else {
-
     }
   };
 
@@ -38,7 +37,7 @@ export const SignUp = () => {
         <div className="block-divided">
           <Input
             value={form.name.value}
-            error={form.name.error}
+            error={t(form.name.error)}
             onChange={(e) =>
               setForm({
                 ...form,
@@ -49,7 +48,7 @@ export const SignUp = () => {
           />
           <Input
             value={form.lastName.value}
-            error={form.lastName.error}
+            error={t(form.lastName.error)}
             placeholder={t("sign-up.lastname-placeholder")}
             onChange={(e) =>
               setForm({
@@ -61,7 +60,7 @@ export const SignUp = () => {
         </div>
         <div className="block">
           <Input
-            value={form.email.value}
+            value={t(form.email.value)}
             onChange={(e) =>
               setForm({
                 ...form,
@@ -69,7 +68,7 @@ export const SignUp = () => {
               })
             }
             type="email"
-            error={form.email.error}
+            error={t(form.email.error)}
             placeholder={t("sign-up.email-placeholder")}
           />
         </div>
@@ -77,7 +76,7 @@ export const SignUp = () => {
           <PhoneNumber
             number={form.phoneNumber.value.number}
             code={form.phoneNumber.value.code}
-            error={form.phoneNumber.error}
+            error={t(form.phoneNumber.error)}
             onChange={(phone) =>
               setForm({
                 ...form,
@@ -106,7 +105,7 @@ export const SignUp = () => {
                 },
               })
             }
-            error={form.region.error}
+            error={t(form.region.error)}
             placeholder={t("sign-up.region-placeholder")}
           />
         </div>
@@ -117,7 +116,7 @@ export const SignUp = () => {
               setForm({ ...form, city: { ...form.city, value } })
             }
             value={form.city.value}
-            error={form.city.error}
+            error={t(form.city.error)}
             placeholder={t("sign-up.city-placeholder")}
           />
         </div>
@@ -128,7 +127,7 @@ export const SignUp = () => {
             onChange={(value) =>
               setForm({ ...form, school: { ...form.school, value } })
             }
-            error={form.school.error}
+            error={t(form.school.error)}
             placeholder={t("sign-up.school-placeholder")}
           />
         </div>
@@ -136,7 +135,7 @@ export const SignUp = () => {
           <MultiSelectSearch
             options={Options}
             placeholder={t("sign-up.subject-placeholder")}
-            error={form.subject.error}
+            error={t(form.subject.error)}
             value={form.subject.value}
             onChange={(values) =>
               setForm({ ...form, subject: { ...form.subject, value: values } })
@@ -149,7 +148,7 @@ export const SignUp = () => {
             onChange={(values) =>
               setForm({ ...form, grade: { ...form.grade, value: values } })
             }
-            error={form.grade.error}
+            error={t(form.grade.error)}
             options={Options}
             placeholder={t("sign-up.grade-placeholder")}
           />
@@ -163,14 +162,14 @@ export const SignUp = () => {
                 password: { ...form.password, value: e.target.value },
               })
             }
-            error={form.password.error}
+            error={t(form.password.error)}
             placeholder={t("sign-up.password-placeholder")}
           />
         </div>
         <div className="block">
           <Password
             value={form.rePassword.value}
-            error={form.rePassword.error}
+            error={t(form.rePassword.error)}
             onChange={(e) =>
               setForm({
                 ...form,

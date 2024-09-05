@@ -1,7 +1,7 @@
 import { ComponentT } from "./types";
 import { Container } from "./styles";
 import { useRef, useState } from "react";
-import { useOutsideClick } from "../../hooks/useOutsideClick";
+import { useOutsideClick } from "../../hooks/use-out-side-click";
 import { ReactComponent as ChevronSVG } from "../../assets/chevron.svg";
 import { ReactComponent as SearchSVG } from "../../assets/search.svg";
 import { ReactComponent as CheckboxNotSelected } from "../../assets/checkbox-not-selected.svg";

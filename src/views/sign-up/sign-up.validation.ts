@@ -12,14 +12,14 @@ export const formValidation = (form, t) => {
   
   if(!form.name.value) {
     isValid = false;
-    newForm.name.error = t('sign-up.validation.field-required');
+    newForm.name.error = 'sign-up.validation.field-required';
   } else {
     newForm.name.error = "";
   }
 
   if(!form.lastName.value) {
     isValid = false;
-    newForm.lastName.error = t('sign-up.validation.field-required');
+    newForm.lastName.error = 'sign-up.validation.field-required';
   } else {
     newForm.lastName.error = "";
   }
@@ -27,11 +27,11 @@ export const formValidation = (form, t) => {
 
   if(!form.email.value) {
     isValid = false;
-    newForm.email.error = t('sign-up.validation.field-required');
+    newForm.email.error = 'sign-up.validation.field-required';
   } else {
     if(!validateEmail(newForm.email.value)) {
       isValid = false;
-      newForm.email.error = t('sign-up.validation.invalid-email');
+      newForm.email.error = 'sign-up.validation.invalid-email';
     } else {
       newForm.email.error = "";
     }
@@ -39,60 +39,60 @@ export const formValidation = (form, t) => {
 
   if(!form.phoneNumber.value.number) {
     isValid = false;
-    newForm.phoneNumber.error = t('sign-up.validation.field-required');
+    newForm.phoneNumber.error = 'sign-up.validation.field-required';
   } else {
     newForm.phoneNumber.error = "";
   }
 
   if(!form.region.value) {
     isValid = false;
-    newForm.region.error = t('sign-up.validation.field-required');
+    newForm.region.error = 'sign-up.validation.field-required';
   } else {
     newForm.region.error = "";
   }
 
   if(!form.city.value) {
     isValid = false;
-    newForm.city.error = t('sign-up.validation.field-required');
+    newForm.city.error = 'sign-up.validation.field-required';
   } else {
     newForm.city.error = "";
   }
 
   if(!form.school.value) {
     isValid = false;
-    newForm.school.error = t('sign-up.validation.field-required');
+    newForm.school.error = 'sign-up.validation.field-required';
   } else {
     newForm.school.error = "";
   }
 
   if(!form.subject.value.length) {
     isValid = false;
-    newForm.subject.error = t('sign-up.validation.field-required');
+    newForm.subject.error = 'sign-up.validation.field-required';
   } else {
     newForm.subject.error = "";
   }
 
   if(!form.grade.value.length) {
     isValid = false;
-    newForm.grade.error = t('sign-up.validation.field-required');
+    newForm.grade.error = 'sign-up.validation.field-required';
   } else {
     newForm.grade.error = "";
   }
 
   if(!form.password.value) {
     isValid = false;
-    newForm.password.error = t('sign-up.validation.field-required');
+    newForm.password.error = 'sign-up.validation.field-required';
   } else {
     newForm.password.error = "";
   }
   
   if(!form.rePassword.value) {
     isValid = false;
-    newForm.rePassword.error = t('sign-up.validation.field-required');
+    newForm.rePassword.error = 'sign-up.validation.field-required';
   } else {
     if(form.rePassword.value !== form.password.value) {
       isValid = false;
-      newForm.rePassword.error = t('sign-up.validation.password-not-match');
+      newForm.rePassword.error = 'sign-up.validation.password-not-match';
     } else {
       newForm.rePassword.error = "";
     }

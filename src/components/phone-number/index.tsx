@@ -4,7 +4,7 @@ import { ComponentT } from "./types";
 import { useRef, useState } from "react";
 
 import countryPhoneCodes from "./countryPhoneCodes.json";
-import { useOutsideClick } from "../../hooks/useOutsideClick";
+import { useOutsideClick } from "../../hooks/use-out-side-click";
 
 export const PhoneNumber: ComponentT = ({
   error,
