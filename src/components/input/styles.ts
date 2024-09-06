@@ -18,6 +18,7 @@ export const Container = styled.div<{
     .error-message {
         position: absolute;
         top: -8px;
+        left: 6px;
         background-color: white;
         color: red;
     }
