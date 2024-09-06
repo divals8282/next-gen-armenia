@@ -8,6 +8,9 @@ export const Container = styled.div`
             grid-template-columns: 1fr 1fr 1fr;
             .logo-container {
                 margin: 10px auto;
+                @media only screen and (max-width:1450px) {
+                    margin: 10px;
+                }
             }
             .language-selector-container {
                 display: flex;
@@ -33,6 +36,7 @@ export const Container = styled.div`
         .navigation-container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
             @media only screen and (max-width:1450px) {
                 grid-template-columns: 1fr 202px;
                 & > div:first-child {
